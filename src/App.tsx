@@ -5,6 +5,7 @@ import { QrReader } from 'react-qr-reader';
 
 function App() {
   const [data, setData] = useState("")
+
   return (
     <div className="App">
         <QrReader
@@ -21,7 +22,8 @@ function App() {
         }}
         />
 
-        { data && <p>{data}</p>}
+        <p>Data:</p>
+        <p>{data}</p>
     </div>
   );
 }
