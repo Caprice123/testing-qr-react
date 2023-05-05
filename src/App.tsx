@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
         <QrReader
-            constraints={{ facingMode: 'environment' }}
+            constraints={{ facingMode: 'user' }}
             onResult={(result, error) => {
             if (result) {
                 setData(result.getText())
